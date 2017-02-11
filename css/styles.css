@@ -52,14 +52,22 @@ a:hover {
 
 .nav li {
   padding: 5px 10px 10px 10px;
+  background: white;
+  border: 1px solid black;
+  /*background: #f6f6f6;*/
 }
 
 .nav a {
-  transition: all .5s;
+  transition: all .5s; 
+  font-size: 25px;
+  color: black;
 }
 
 .nav a:hover {
-  color: white
+  color: #AD2A1A;
+  border-color: blue;
+  
+
 }
 
 header {
@@ -80,6 +88,7 @@ header h2:nth-of-type(1){
   font-size: 4em;
   text-transform:uppercase;
   margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 header h2:nth-of-type(2){
@@ -237,6 +246,7 @@ a.social:hover {
   .information{
     text-align: left;
   }
+
 
   footer {
     font-size: 1.3em;
