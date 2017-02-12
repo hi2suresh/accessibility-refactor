@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,14 +18,14 @@
       </ul>
     </div>
 
-  <header>
+  <header role="banner">
     <div>
     <h2>Accessible Frog</h2>
     <h2>We make awesome music</h2>
     </div>
     </header>
 
-    <main>
+    <main role="main">
       <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
@@ -35,11 +35,11 @@
             <br>
             <fieldset>
                 <legend>Who is your favorite band member:</legend>
-              <input type="radio" id="bandBob" name="res" value="Bob">  <label for="bandBob">Bob</label>
-              <input type="radio" id="bandHazzard" name="res" value="Hazzard"> <label for="bandHazzard">Hazzard</label>
-              <input type="radio" id="bandJohn" name="res" value="John"> <label for="bandJohn">John</label>           
+              <input type="radio" role="radio" id="bandBob" aria-checked="false" name="res" value="Bob">  <label for="bandBob">Bob</label>
+              <input type="radio" role="radio" id="bandHazzard" aria-checked="false" name="res" value="Hazzard"> <label for="bandHazzard">Hazzard</label>
+              <input type="radio" role="radio" id="bandJohn" aria-checked="false" name="res" value="John"> <label for="bandJohn">John</label>           
 
-              <input type="radio" id="bandSally" name="res" value="Sally"> <label for="bandSally">Sally</label>
+              <input type="radio" role="radio" id="bandSally" aria-checked="false" name="res" value="Sally"> <label for="bandSally">Sally</label>
               </fieldset>
               <br>  
               <label for="albums">What is your favorite album:</label><br>            
@@ -78,14 +78,15 @@
                   
                   <label for="retype">Retype Email:</label> <input type ="email" id="retype" name="textretypeemail"><br>
                   
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" aria-describedby="sign">Sign Up</button>
+                  <p id="sign">You will receive news letter to your e-mail after successful signup </p>
               </form>
             </div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter logo"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube logo"></a></li>
