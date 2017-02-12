@@ -7,8 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: color;
+  font-family: 'Open Sans', sans-serif;  
   background: white;
 }
 
@@ -59,7 +58,7 @@ a:hover {
 
 .nav a {
   transition: all .5s; 
-  font-size: 25px;
+  font-size: 15px;
   color: black;
 }
 
@@ -85,14 +84,14 @@ header div {
 }
 
 header h2:nth-of-type(1){
-  font-size: 4em;
+  font-size: 2.5em;
   text-transform:uppercase;
-  margin-bottom: 25px;
-  padding-top: 25px;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 
 header h2:nth-of-type(2){
-  font-size: 2em;
+  font-size: 1.5em;
   color:#781125;
   margin-top: 0px; 
 }
@@ -203,6 +202,30 @@ a.social:hover {
   clear: both;
 }
 
+.newsletter {
+  margin-top: 22px;
+}
+
+.newsletter label {
+  float: left;
+}
+.newsletter input {
+  width: 100%;
+  padding:5px 0;
+  margin-bottom: 5px;
+
+}
+
+.newsletter button {
+ width: 50%;
+ margin-top: 5px;
+ padding: 5px 0;
+}
+
+
+.newsletter input:focus, textarea:focus {background-color: lightgray; color: black;}
+
+.survey input:focus {background-color: white; color: black; padding-top: 10px;}
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
 
@@ -217,11 +240,34 @@ a.social:hover {
     min-height: 470px;
   }
 
+  header h2:nth-of-type(1){
+  font-size: 4em;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+header h2:nth-of-type(2){
+  font-size: 2em;
+}
+
   .nav {
     max-width: 1200px;
     padding: 0 30px;
   }
 
+  .nav a {
+  font-size: 25px;
+  
+}
+
+.newsletter input {  
+  padding:10px 0;
+}
+
+.newsletter button {
+ margin-top: 15px;
+ padding: 15px 0;
+}
 
   main {
     padding-top: 20px;

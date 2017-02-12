@@ -15,6 +15,10 @@ pre {
   padding: 10px;
 }
 
+@media screen and (min-width: 840px) {
+
+
 table {
 	margin-left: 50px;
+}
 }
